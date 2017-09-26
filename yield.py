@@ -14,8 +14,10 @@ blackOutline = LineStyle(1,black) #pixels, color
 
 whiteTriangle = PolygonAsset([(500,0),(200,500),(800,500)],blackOutline, red) #List of endpoints, outline, fill
 redTriangle = PolygonAsset([(500,100),(300,450),(700,450)],blackOutline, white) #List of endpoints, outline, fill
+whiteTriangle2 = PolygonAsset([(500,-10),(190,505),(810,510)],blackOutline, white)
 text = TextAsset('Yield' ,fill=red, style='bold 40pt Times')
 
+Sprite(whiteTriangle2)
 Sprite(whiteTriangle)
 Sprite(redTriangle)
 Sprite(text, (450,300))
